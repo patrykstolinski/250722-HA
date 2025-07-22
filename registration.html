@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Xavier’s School for Gifted Youngsters</title>
+</head>
+
+<body style="font-family: 'oswald'">
+    <header style="width:100%;">
+        <h1 style="text-align: center; margin:10px ">"Mutant and Proud"</h1>
+        <nav style="display:flex; justify-content: center; ">
+            <ul
+                style="display:flex; gap:20px; padding:0; list-style:none;text-decoration: none;font-size: 25px; padding: 0; margin:0; ">
+                <li><a href="index.html" style="text-decoration: none; color:rgb(15, 151, 151)">Home</a></li>
+                <li><a href="team.html" style="text-decoration: none; color:rgb(15, 151, 151)">Our team</a></li>
+                <li><a href="about.html" style="text-decoration: none; color:rgb(15, 151, 151)">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div style="padding: 0px 30% 0px 30%">
+        <p style="text-align: center;"><img src="team_photos/weWantYou.jpg" width="15%" alt="rogue_about_us"></p>
+        <h2 style="text-align: center;padding: 0px 0px 20px 20px">
+            Do you/your child want to join Xavier's School for Gifted Youngsters? Sign in below!
+        </h2>
+        <form action="http://backend.quatsch">
+            <h2>Persönliche Informationen</h2>
+
+            <label style="font-size: 19px">
+                First name:
+                <input type="text" name="first_name" id="first_name" />
+            </label><br>
+            <label style="font-size: 19px"> Last name: <input type="text" name="last_name" id="last_name" />
+            </label>
+            <br>
+            <label for="email" style="font-size: 19px">Email: <input type="email" name="email" id="email" /></label>
+            <br>
+
+            <label for="bday" style="font-size: 19px">Geburtstag: <input type="date" name="bday" id="bday" /></label>
+            <br><br>
+            <label for="cars" style="font-size: 19px">Choose your preferred subject area:</label>
+
+            <p><select name="powers" id="powers">
+                    <option value="Survival training">Survival training</option>
+                    <option value="telekinesis for dummies">Telekinesis for dummies</option>
+                    <option value="Liar liar pants on fire">Liar liar pants on FIRE handling</option>
+                    <option value="Ice ice baby">Ice ice baby (Ice control)</option>
+                </select></p>
+            <div style="display:flex; flex-direction: column; width: 50%">
+                <p style="font-size: 19px">Your powers (choose as many as fit):</p>
+                <label><input type="checkbox" name="telepathy"> Telepathy</label>
+                <label><input type="checkbox" name="adamantium"> Adamantium Claws</label>
+                <label><input type="checkbox" name="weather"> Weather Control</label>
+                <label><input type="checkbox" name="opticblast"> Optic Blast</label>
+                <label><input type="checkbox" name="healing"> Regeneration</label>
+                <label><input type="checkbox" name="phasing"> Phasing Through Walls</label>
+                <label><input type="checkbox" name="telekinesis"> Telekinesis</label>
+                <label><input type="checkbox" name="metalcontrol"> Magnetism Control</label>
+                <label><input type="checkbox" name="shapeshifting"> Shapeshifting</label>
+                <label><input type="checkbox" name="ice"> Ice Generation</label>
+            </div>
+
+            <p style="font-size: 19px">Preferred classes time of day:</p>
+
+            <input type="radio" name="classtime" id="daytime" value="daytime" />
+            <label for="daytime">Day classes</label>
+            <input type="radio" name="classtime" id="nighttime" value="nighttime" />
+            <label for="nighttime">Night classes</label><br>
+            <br>
+
+
+            <label for="tel" style="font-size: 19px">Phone number:</label>
+            <p><input type="tel" name="tel" id="tel" /></p>
+
+
+
+
+            <label for="comment" style="font-size: 19px">If you have anything to say, please let us know
+                below:</label><br><br>
+            <textarea id="comment" name="comment" rows="10" cols="50">
+Hello, I found myself today with power of flight, and I am very scared, as I have a height phobia....</textarea>
+
+            <p><input type="reset" value="Reset the form" /></p>
+            <p><input type="submit" value="Send the child away" /></p>
+        </form>
+    </div>
+    <footer style="text-align: center;">
+
+    </footer>
+
+</body>
+
+</html>
