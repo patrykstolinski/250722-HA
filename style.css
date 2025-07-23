@@ -15,9 +15,12 @@ footer {
 div {
     text-align: center;
 }
-h3 {
-    color:brown;
-
+.main {
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+    box-shadow: 5px 5px 20px rgb(207, 207, 207);
+    border-radius: 10px;
+    padding: 20px;
 }
 nav {
      display:flex;
@@ -33,15 +36,43 @@ ul {
      font-size: 25px;
      margin: 0;
 }
+
 h1 {
     text-align: center; 
     margin:10px;
+}
+
+h3 {
+    color:brown;
+
 }
 
 
 li, a {
     text-decoration: none; 
     color:rgb(15, 151, 151);
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+}
+li::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: rgb(15, 151, 151);
+    transition: width .3s;
+}
+li:hover::after {
+    width: 100%;
+}
+a:focus{
+    transition: 0.3s;
+    font-size: 30px;
+    color: black;
 }
 
 label {
@@ -66,21 +97,11 @@ label {
     margin-right: 5px;
 }
 
-#radioButtons {
-    display: flex;
-    flex-direction: column;
-}
 .classesTimeTitle {
     font-size: 20px;
     align-self: center;
     text-align: center;
     margin-bottom: 10px;
-}
-
-#ticker {
-    display:flex; 
-    flex-direction: column; 
-    align-items: flex-start;
 }
 
 .commentBlock {
@@ -102,5 +123,25 @@ label {
   font-family: inherit;
   font-size: 16px;
   padding: 8px;
-  resize: vertical; /* allows user to resize height */
+  resize: vertical;
+}
+
+#ticker {
+    display:flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+
+#radioButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+figure, .emboldened {
+    padding: 20px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgb(172, 172, 172);
+    margin:20px;
 }
