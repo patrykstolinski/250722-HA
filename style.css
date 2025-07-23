@@ -56,23 +56,24 @@ li, a {
     position: relative;
     margin: 10px;
 }
-li::after {
+a::after {
     content: '';
     position: absolute;
     height: 3px;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     width: 0;
-    background: rgb(15, 151, 151);
+    background: currentColor;
     transition: width .3s;
 }
-li:hover::after {
+a:hover::after,a:focus::after {
     width: 100%;
 }
 a:focus{
     transition: 0.3s;
     font-size: 30px;
-    color: black;
+    color: rgb(6, 83, 83);
+
 }
 
 label {
